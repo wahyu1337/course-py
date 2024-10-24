@@ -1,0 +1,24 @@
+inputMinimum = 0
+inputMaximum = 0
+helpCommand = ("""
+start - to start the game
+stop - to stop the car
+quit - to exit    
+""")
+startCommand = ("Car started...Ready to go!")
+stopCommand = ("Car stopped.")
+
+while inputMinimum == inputMaximum:
+  inputText = input(">")
+  inputText = inputText.lower()
+  if inputText == "help":
+    print(helpCommand)
+  elif inputText == "start":
+    print(startCommand)
+  elif inputText == "stop":
+    print(stopCommand)
+  elif inputText == 'quit':
+    print("")
+    break
+  else:
+    print ("I dont understand")
